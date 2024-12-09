@@ -21,6 +21,7 @@ avg_billing = data["Billing Amount"].mean()
 
 # Create a web app
 app = dash.Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP,'/assets/styles.css'])
+server = app.server
 
 # App layout and Design
 app.layout = dbc.Container([
@@ -238,3 +239,4 @@ def update_admissions(chart_type,selected_condition):
 
 if __name__ == '__main__':
     app.run_server(debug=True)
+    
