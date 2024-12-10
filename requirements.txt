@@ -2,4 +2,5 @@ dash==2.6
 pandas
 gunicorn
 dash-bootstrap-components
+plotly
 
